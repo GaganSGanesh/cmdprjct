@@ -1,13 +1,14 @@
 package Overriding;
 
 public class Parent {
+	static Parent p=new Parent();
 	public Parent m() {
-		return null;
+		return p;
 		
 	}
 	
 	public Object n() {
-		return null;
+		return new Object();
 	}
 	
 	public int o() {
@@ -16,13 +17,14 @@ public class Parent {
 	
 }
 class Child extends Parent{
+	static Child c=new Child();
 	@Override
 	public Child m() {
-		return null;
+		return c;
 	}
 	@Override
 	public String n() {
-		return null;
+		return new String();
 	}
 //	@Override
 //	public short o() {

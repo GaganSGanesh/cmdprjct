@@ -27,7 +27,6 @@ class SumOfNumbersInString{
 		for(int i=0;i<s.length();i++) {
 			if(s.charAt(i)>=48&&s.charAt(i)<=57)
 				sum=sum+s.charAt(i)-48;
-		
 		}
 		System.out.println(sum);
 	}	
